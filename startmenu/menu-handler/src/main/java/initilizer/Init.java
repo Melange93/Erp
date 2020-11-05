@@ -1,5 +1,6 @@
-package com.reka.lakatos.erp;
+package initilizer;
 
+import handler.MenuHandler;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
@@ -12,6 +13,6 @@ public class Init implements CommandLineRunner {
 
     @Override
     public void run(String... args) {
-        //menuHandler.start();
+        menuHandler.start();
     }
 }

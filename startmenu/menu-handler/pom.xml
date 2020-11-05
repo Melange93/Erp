@@ -3,23 +3,23 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>human-resources</artifactId>
+        <artifactId>erp</artifactId>
         <groupId>com.reka.lakatos</groupId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>controller</artifactId>
+    <artifactId>menu-handler</artifactId>
     <dependencies>
         <dependency>
             <groupId>com.reka.lakatos</groupId>
-            <artifactId>server</artifactId>
+            <artifactId>human-resources-department</artifactId>
             <version>0.0.1-SNAPSHOT</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>com.reka.lakatos</groupId>
-            <artifactId>domain</artifactId>
+            <artifactId>log-domain</artifactId>
             <version>0.0.1-SNAPSHOT</version>
             <scope>compile</scope>
         </dependency>

@@ -1,9 +1,9 @@
 package service;
 
 import document.EmployeeDocument;
-import repository.EmployeeRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import repository.EmployeeRepository;
 import service.domain.Employee;
 import service.domain.EmployeeCreationContext;
 

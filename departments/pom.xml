@@ -2,19 +2,22 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <parent>
-        <artifactId>human-resources</artifactId>
-        <groupId>com.reka.lakatos</groupId>
-        <version>0.0.1-SNAPSHOT</version>
-    </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>human-resources-server</artifactId>
+    <groupId>com.reka.lakatos</groupId>
+    <artifactId>departments</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>departments-creator</module>
+        <module>departments-response-domain</module>
+    </modules>
+
     <dependencies>
         <dependency>
-            <groupId>com.reka.lakatos</groupId>
-            <artifactId>human-resources-repository</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.12</version>
             <scope>compile</scope>
         </dependency>
     </dependencies>

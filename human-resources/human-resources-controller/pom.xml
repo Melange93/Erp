@@ -9,17 +9,17 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>controller</artifactId>
+    <artifactId>human-resources-controller</artifactId>
     <dependencies>
         <dependency>
             <groupId>com.reka.lakatos</groupId>
-            <artifactId>server</artifactId>
+            <artifactId>human-resources-server</artifactId>
             <version>0.0.1-SNAPSHOT</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>com.reka.lakatos</groupId>
-            <artifactId>domain</artifactId>
+            <artifactId>human-resources-domain</artifactId>
             <version>0.0.1-SNAPSHOT</version>
             <scope>compile</scope>
         </dependency>

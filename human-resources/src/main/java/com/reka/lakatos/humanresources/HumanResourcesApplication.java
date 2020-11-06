@@ -11,7 +11,7 @@ import java.util.Map;
 public class HumanResourcesApplication {
 
 	public static void main(String[] args) {
-		//SpringApplication.run(HumanResourcesApplication.class, args);
+		//SpringApplication.run(com.reka.lakatos.humanresources.HumanResourcesApplication.class, args);
 
 		SpringApplication app = new SpringApplication(HumanResourcesApplication.class);
 		app.setDefaultProperties(settings());

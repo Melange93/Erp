@@ -5,6 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 
+import java.util.Map;
 import java.util.Scanner;
 
 @SpringBootApplication
@@ -13,7 +14,18 @@ import java.util.Scanner;
 public class ZuulApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ZuulApplication.class, args);
+        //SpringApplication.run(ZuulApplication.class, args);
+
+        SpringApplication app = new SpringApplication(ZuulApplication.class);
+        app.setDefaultProperties(settings());
+        app.run(args);
+    }
+
+    public static Map<String, Object> settings() {
+        return Map.ofEntries(
+                Map.entry("server.port", "8762"),
+                Map.entry("spring.application.name", "startmenu")
+        );
     }
 
 }

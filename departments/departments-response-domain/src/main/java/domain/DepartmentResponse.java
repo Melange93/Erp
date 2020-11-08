@@ -7,7 +7,7 @@ import java.util.List;
 
 @Getter
 @Builder
-public abstract class DepartmentResponse {
+public class DepartmentResponse {
 
     private final String departmentName;
     private final List<String> menuCommands;
@@ -17,7 +17,5 @@ public abstract class DepartmentResponse {
         this.menuCommands = menuCommands;
     }
 
-    public abstract void command(String command);
-
-
+    //public abstract void command(String command);
 }

@@ -3,11 +3,9 @@ package commandhanlers.add;
 import domain.Employee;
 import domain.EmployeeResponse;
 import logicdomain.CommandHandler;
-import org.springframework.stereotype.Component;
 
 import java.util.Objects;
 
-@Component
 public class HumanResourcesAddCommandHandler extends CommandHandler {
 
     private static final String ADD_COMMAND = "Add";

@@ -1,6 +1,6 @@
-package repository;
+package database.repository;
 
-import document.EmployeeDocument;
+import database.document.EmployeeDocument;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 

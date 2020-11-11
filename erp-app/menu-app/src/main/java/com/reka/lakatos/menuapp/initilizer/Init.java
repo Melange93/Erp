@@ -1,15 +1,13 @@
-package initilizer;
+package com.reka.lakatos.menuapp.initilizer;
 
-import handler.MenuHandler;
-import lombok.RequiredArgsConstructor;
+import com.reka.lakatos.menuapp.handler.MenuHandler;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
 @Component
-@RequiredArgsConstructor
 public class Init implements CommandLineRunner {
 
-    private final MenuHandler menuHandler;
+    private final MenuHandler menuHandler = new MenuHandler();
 
     @Override
     public void run(String... args) {

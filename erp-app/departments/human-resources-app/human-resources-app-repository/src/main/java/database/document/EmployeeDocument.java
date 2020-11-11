@@ -1,4 +1,4 @@
-package document;
+package database.document;
 
 import lombok.Data;
 import org.springframework.data.annotation.Id;

@@ -3,6 +3,7 @@ package commandhanlers.add;
 import domain.Employee;
 
 import java.util.Scanner;
+
 public class HumanResourcesAddScanner {
 
     private final Scanner scanner;

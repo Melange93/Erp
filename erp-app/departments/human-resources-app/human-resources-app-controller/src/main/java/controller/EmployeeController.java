@@ -43,9 +43,9 @@ public class EmployeeController {
     public EmployeeResponse updateEmployee(@RequestBody EmployeeRequest employeeRequest) {
         Employee employee = employeeService.updateEmployee(
                 EmployeeCreationContext.builder()
-                .name(employeeRequest.getName())
-                .birthYear(employeeRequest.getBirthYear())
-                .build()
+                        .name(employeeRequest.getName())
+                        .birthYear(employeeRequest.getBirthYear())
+                        .build()
         );
 
         return EmployeeResponse.builder()
